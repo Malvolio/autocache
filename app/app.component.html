@@ -1,0 +1,47 @@
+<mat-toolbar color="primary">
+  <span>Auto-cache Proof of Concept</span>
+</mat-toolbar>
+
+<mat-table [dataSource]="cast">
+  
+   <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef>#</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.name }}</mat-cell>
+    </ng-container>
+
+   <ng-container matColumnDef="height">
+      <mat-header-cell *matHeaderCellDef>#</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.height }}</mat-cell>
+    </ng-container>
+
+   <ng-container matColumnDef="mass">
+      <mat-header-cell *matHeaderCellDef>#</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.mass }}</mat-cell>
+    </ng-container>
+
+   <ng-container matColumnDef="hair">
+      <mat-header-cell *matHeaderCellDef>#</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.hair }}</mat-cell>
+    </ng-container>
+
+   <ng-container matColumnDef="skin">
+      <mat-header-cell *matHeaderCellDef>#</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.skin }}</mat-cell>
+    </ng-container>
+
+   <ng-container matColumnDef="eye">
+      <mat-header-cell *matHeaderCellDef>#</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.eye }}</mat-cell>
+    </ng-container>
+
+   <ng-container matColumnDef="birth">
+      <mat-header-cell *matHeaderCellDef>#</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.birth }}</mat-cell>
+    </ng-container>
+
+   <ng-container matColumnDef="gender">
+      <mat-header-cell *matHeaderCellDef>#</mat-header-cell>
+      <mat-cell *matCellDef="let row">{{ row.gender }}</mat-cell>
+    </ng-container>
+
+</mat-table>
